@@ -30,6 +30,7 @@
 
     // Extract id token from the id_token parameter
     var match = url.match('id_token=([^&]*)');
+    console.log(match)
     if (match) {
       var id_token = match[1]; // String captured by ([^&]*)
 
