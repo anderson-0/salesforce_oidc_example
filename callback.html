@@ -35,6 +35,7 @@
 
       // Make AWS request using the id token
       if (id_token) {
+        console.log(`Got id token: ${id_token}`)
         printMessage('<span style="color:#000000">Using id token from Salesforce to query DynamoDB . . .</span>');
         makeCognitoRequest(id_token);
       } else {
