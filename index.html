@@ -32,7 +32,7 @@
     // Consumer key for the connected app created in Salesforce
     // **** REPLACE WITH YOUR OWN CONSUMER KEY ****
     var client_id = '3MVG94YrNIs0WS4e6cQ19PEAXnzbc66UkFz03m3sD3If3icvRQ6XizglE4wrHf8l1w82ZeLTiKKQyXFmc3juv';
-    let domain = (new URL(window.location.hostname));
+    let domain = window.location.hostname;
     // Callback URL (must be HTTPS) configured for the connected app      
     var redirect_uri = `https://${domain}/callback.html`;
     console.log(domain)
