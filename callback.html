@@ -38,7 +38,7 @@
       if (id_token) {
         console.log(`Got id token: ${id_token}`)
         printMessage('<span style="color:#000000">Using id token from Salesforce to query DynamoDB . . .</span>');
-        makeCognitoRequest(id_token);
+        // makeCognitoRequest(id_token);
       } else {
         printMessage('Error: Could not retrieve id token from the URL');
       }
