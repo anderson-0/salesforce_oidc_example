@@ -35,7 +35,8 @@
     let domain = (new URL(window.location.hostname));
     // Callback URL (must be HTTPS) configured for the connected app      
     var redirect_uri = `https://${domain}/callback.html`;
-
+    console.log(domain)
+    console.log(redirect_uri)
     // Construct the redirect URL
     // For getting an id token, response_type of 
     // "token id_token" (note the space), scope of 
